@@ -1,0 +1,13 @@
+n = int(input())
+nums = []
+
+for i in range(n):
+    num = int(input())
+    
+    if num != 0:
+        nums.append(num)
+    
+    elif num == 0 and len(nums) != 0:
+        nums.pop()
+
+print(sum(nums))
